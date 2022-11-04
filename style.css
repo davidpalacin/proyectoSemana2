@@ -16,7 +16,7 @@
         height: 50vh;
         display: flex;
         padding: 5px 0;
-        background-color: black;
+        background-color: rgb(67, 32, 0);
         color: white;
         font-weight: bold;
         align-items: center;
@@ -49,16 +49,6 @@
         height: auto;
         margin: 0 10px;
     }
-    .menuItem {
-        padding: 10px 20px;
-        border-radius: 10px;
-        margin: 0 20px;
-    }
-
-    .menuItem:hover {
-        background-color: rgb(93, 93, 93);
-        cursor: pointer;
-    }
     section{
         padding: 5px;
         margin: 0 10px;
@@ -73,11 +63,13 @@
     section article p{
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
+        color: rgb(67, 32, 0);
     }
     section article h2{
         margin: 10px 0;
         background-color: antiquewhite;
         border-radius: 5px;
+        color: rgb(67, 32, 0);
     }
     .importante{
         color: rgb(195, 0, 0);
@@ -87,10 +79,15 @@
     section:hover{
         background-color: antiquewhite;
         margin-top: 10px;
-        cursor: pointer;
     }
     .logo-container{
         margin-right: auto;
+    }
+    .miNav{
+        background-image: url(assets/img/logo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
     }
 
     @media (max-width: 524px){
