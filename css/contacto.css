@@ -11,7 +11,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Seagram, Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    background-image: url("../assets/img/wood-pattern.svg");
 }
 
 .main h1{
@@ -22,44 +26,79 @@ main header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(67, 32, 0);
-    height: 25vh;
+    height: 20vh;
 }
 .form-box{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    background-color: antiquewhite;
+    padding-top: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+img[id*="tornillo"]{
+    position: absolute;
+    margin: 10px;
+}
+#tornillo1{
+    left: 0;
+    top: 0;
+}
+#tornillo2{
+    bottom: 0;
+    left: 0;
+}
+#tornillo3{
+    right: 0;
+    top: 0;
+}
+#tornillo4{
+    bottom: 0;
+    right: 0;
+}
+.form-field{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.form-field input{
     width: 70%;
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;  
+    border: none;
+    border-radius: 5px;
 }
-.form-section{
-    margin-top: 20px;
+textarea{
+    resize: none;
+    border-radius: 5px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.form-section input{
-    display: block;
-}
-.form-section label{
-    font-family: Seagram;
-}
-.info{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: center;
+button{
+    border: none;
+    border-radius: 5px;
     padding: 10px;
-    height: 400px;
-    width: 300px;
+    cursor: pointer;
 }
-@media(max-width: 524px){
+.send{
+    font-size: 20px;
+}
+
+@media(min-width: 524px){
     .form-box{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
+        margin-top: 15px;
+        width: 70%;
+        margin: 0 auto;
     }
-    form{
-        text-align: center;
+    input{
+        height: 30px;
     }
-    .info{
-        width: 100%;
+    main header{
+        height: auto;
+        padding: 10px 0;
     }
 }
