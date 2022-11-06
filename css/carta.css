@@ -1,0 +1,97 @@
+@font-face {
+    font-family: Seagram;
+    src: url(../assets/fuentes/Seagram\ tfb.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Seagram, Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(67, 32, 0);
+}
+.container{
+    display: flex;
+    justify-content: center;
+
+}
+.boxCarta{
+    display: flex;
+    margin-top: 20px;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    background-color:beige;
+    position: relative;
+    padding: 10px;
+}
+img[id*="tornillo"]{
+    position: absolute;
+    width: 25px;
+    margin: 10px;
+}
+#tornillo1 {
+    left: 0;
+    top: 0;
+}
+
+#tornillo2 {
+    bottom: 0;
+    left: 0;
+}
+
+#tornillo3 {
+    right: 0;
+    top: 0;
+}
+
+#tornillo4 {
+    bottom: 0;
+    right: 0;
+}
+.disclaimer{
+    margin-top: 15px;
+    font-family: arial;
+    color: red;
+    font-size: 0.8rem;
+}
+.product-card{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: flex-start;
+    background-color: rgb(176, 176, 176);
+    border-radius: 10px;
+}
+.product-card:last-child{
+    margin-bottom: 30px;
+}
+.left-product-card{
+    display: flex;
+    flex-direction: column;
+}
+.left-product-card img{
+    width: 90px;
+    height: auto;
+    border-radius: 10px;
+}
+.right-product-card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+.description-product{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+}
+
+@media(min-width: 524px){
+    .boxCarta {
+            width: 70%;
+    }
+}
