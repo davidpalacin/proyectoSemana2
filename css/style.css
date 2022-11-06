@@ -1,10 +1,12 @@
-    :root{
+    :root {
         --main-color: rgb(178, 107, 15);
     }
+
     @font-face {
         font-family: Seagram;
-        src: url(assets/fuentes/Seagram\ tfb.ttf);
+        src: url(../assets/fuentes/Seagram\ tfb.ttf);
     }
+
     * {
         margin: 0;
         padding: 0;
@@ -21,77 +23,85 @@
         font-weight: bold;
         align-items: center;
         justify-content: center;
+        background-image: url(../assets/img/logo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
     }
 
-    .container{
+    .container {
         width: 70%;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
     }
-    .box-enlace{
+
+    .box-enlace {
         margin: 20px 0;
         display: flex;
         justify-content: center;
     }
-    .box-enlace a{
+
+    .box-enlace a {
         color: var(--main-color);
-        font-weight:bold;
+        font-weight: bold;
     }
-    .separa{
+
+    .separa {
         width: 100%;
         display: flex;
         justify-content: center;
         margin: 10px 0;
     }
-    .separa img{
+
+    .separa img {
         width: 23px;
         height: auto;
         margin: 0 10px;
     }
-    section{
+
+    section {
         padding: 5px;
         margin: 0 10px;
         border-radius: 10px;
         height: fit-content;
         transition: all 0.5s ease;
     }
-    section h2{
+
+    section h2 {
         text-align: center;
         font-family: Seagram;
     }
-    section article p{
+
+    section article p {
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
         color: rgb(67, 32, 0);
     }
-    section article h2{
+
+    section article h2 {
         margin: 10px 0;
         background-color: antiquewhite;
         border-radius: 5px;
         color: rgb(67, 32, 0);
     }
-    .importante{
+
+    .importante {
         color: rgb(195, 0, 0);
         font-style: italic;
     }
 
-    section:hover{
+    section:hover {
         background-color: antiquewhite;
         margin-top: 10px;
     }
-    .logo-container{
+
+    .logo-container {
         margin-right: auto;
     }
-    .miNav{
-        background-image: url(assets/img/logo.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-    }
 
-    @media (max-width: 524px){
-        .container{
+    @media (max-width: 524px) {
+        .container {
             width: 100%;
         }
     }
