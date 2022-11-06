@@ -14,8 +14,12 @@ body{
 }
 .container{
     display: flex;
-    justify-content: center;
-
+    flex-direction: column;
+    align-items: center;
+}
+.volver{
+    margin-top: 10px;
+    text-decoration: none;
 }
 .boxCarta{
     display: flex;
@@ -66,32 +70,36 @@ img[id*="tornillo"]{
     width: 100%;
     margin-top: 20px;
     align-items: center;
-    background-color: rgb(176, 176, 176);
+    background-color: rgb(209, 209, 209);
     border-radius: 10px;
     cursor: pointer;
 }
 .product-card:last-child{
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 .left-product-card{
     display: flex;
     flex-direction: column;
 }
 .left-product-card img{
-    width: 90px;
+    width: 100%;
     height: auto;
     border-radius: 10px;
 }
 .right-product-card{
     display: flex;
-    margin-left: 10px;
     flex-direction: column;
     width: 100%;
     justify-content: center;
+    margin-top: 20px;
 }
 .description-product{
     font-family: 'Times New Roman', Times, serif;
     font-size: small;
+}
+.volver{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 @media(min-width: 524px){
@@ -104,5 +112,12 @@ img[id*="tornillo"]{
     }
     .left-product-card img{
         height: 90px;
+        width: 90px;
     }
+    .right-product-card{
+        margin-left: 10px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
 }
